@@ -27,9 +27,9 @@ public class Conexion{
     public Conexion()
     {
         String ruta1 = System.getProperty("user.dir");
+        JOptionPane.showMessageDialog(null,ruta1);
         ruta = "/"+ruta1+"/registro.db";
-        System.out.println(ruta);
-             JOptionPane.showMessageDialog(null,"La ruta de la base de datos se debe de encontrar en:\n"+ruta);
+        //ruta = "C:/Users/Miguel Rocha/Downloads/ProyectoSQLite/registro.db";
     }
     public void conectar(){
 		try {
